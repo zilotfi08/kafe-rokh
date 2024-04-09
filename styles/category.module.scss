@@ -1,0 +1,45 @@
+$orang: #FF9F0D;
+$oreanglight: #E69707;
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 40px;
+    height: 150px;
+    background-color: #f2f3f3b0;
+    position: relative;
+    overflow: hidden;
+
+
+
+    &::after {
+        content: "";
+        bottom: -100px;
+        right: 0;
+
+        background-image: url("./../public/images/category/Vector.svg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        width: 500px;
+        height: 400px;
+        position: absolute;
+    }
+
+    .item {
+        border: 3px solid #fff;
+        width: 100px !important;
+        height: 100px !important;
+        margin-inline: 10px;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+}
+
+.swiper_category {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
