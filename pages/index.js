@@ -5,6 +5,7 @@ import Header from "@/components/templates/Index/Header";
 import Navbar from "@/components/modules/Navbar/Navbar";
 import Category from "@/components/templates/Index/Category";
 import MenukafeItem from "@/components/modules/menukafe/MenukafeItem";
+import Card from "@/components/modules/Card/Card";
 
 
 
@@ -18,6 +19,7 @@ function Index({ data }) {
       <Navbar />
       <Category services={data.services} />
       <MenukafeItem menu={data.menu} />
+      <Card item={data.menu} />
 
     </>
   );

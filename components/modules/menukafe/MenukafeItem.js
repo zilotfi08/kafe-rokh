@@ -6,8 +6,6 @@ import styled from "../../../styles/menu.module.scss";
 
 function MenukafeItem({ menu }) {
 
-
-
     return (
         <div className={styled.menu}>
             <h1 className={styled.title}>
@@ -28,12 +26,16 @@ function MenukafeItem({ menu }) {
                 <div className={styled.right}>
                     {menu.map((menu) => (
                         <div className={styled.item} >
-                            <span className={styled.price}>{menu.price}</span>
-                            <div className={styled.line} ></div>
+                            <div className={styled.right}>
+                                <span className={styled.price}>{menu.price}</span>
+                                <div className={styled.line} ></div>
+                            </div>
+
                             <div className={styled.info_menu}>
                                 <h2 className={styled.title_menu}>{menu.title}</h2>
                                 <span className={styled.desc_menu}>{menu.desc}</span>
                             </div>
+
 
 
 
