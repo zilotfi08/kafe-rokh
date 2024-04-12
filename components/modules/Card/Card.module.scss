@@ -1,0 +1,34 @@
+.box_card {
+    display: flex;
+
+
+
+    margin-inline: 10px;
+
+    .img {
+        width: 200px;
+
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    .desc {
+        font-size: 16px;
+        font-weight: 100;
+        color: #928f8f;
+    }
+
+
+    .swiper_offer {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}

@@ -60,6 +60,7 @@ $other-red: #e31000;
         display: flex;
         justify-content: space-between;
         position: relative;
+        padding-bottom: 50px;
 
         &::after {
             content: "";
@@ -85,10 +86,13 @@ $other-red: #e31000;
             position: absolute;
         }
 
+
+
         .right {
 
             width: 50%;
             z-index: 2;
+
 
             .item {
                 margin-top: 20px;

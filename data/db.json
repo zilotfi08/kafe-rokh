@@ -59,6 +59,66 @@
       "img": "/images/menu-6.jpeg"
     }
   ],
+  "offerProduct": [
+    {
+      "id": "1",
+      "title": "امریکانو",
+      "price": 5000,
+      "desc": "کاهو، نصف فیله آووکادو، ۲ عدد فیله مرغ گریل شده،  قارچ صدفی، گوجه گیلاسی",
+      "type": "cold",
+      "img": "/images/offer-product/01.png"
+    },
+    {
+      "id": "2",
+      "title": "اسپرسو",
+      "price": 4000,
+      "desc": "کاهو، فیله نصف آووکادو، نان طعم دار شده، زیتون سبز، گوجه گیلاسی",
+      "score": 4.4,
+      "off": 0,
+      "type": "hot",
+      "img": "/images/offer-product/02.png"
+    },
+    {
+      "id": "3",
+      "title": "سیب زمینی با سس عربی تند",
+      "price": 6000,
+      "desc": "ترکیب اسپرسو دو شات و شیر با فوم کم، ۳۶۰ میلی‌ لیتر",
+      "score": 4.9,
+      "off": 0,
+      "type": "cold",
+      "img": "/images/offer-product/03.png"
+    },
+    {
+      "id": "4",
+      "title": "پاستا پنه سبزیجات",
+      "price": 30000,
+      "desc": "ترکیب اسپرسو دو شات و شیر با فوم کم، ۳۶۰ میلی‌ لیتر",
+      "score": 5,
+      "off": 0,
+      "type": "hot",
+      "img": "/images/offer-product/04.png"
+    },
+    {
+      "id": "5",
+      "title": "سیب زمینی با سس عربی تند",
+      "price": 60000,
+      "desc": "ترکیب اسپرسو دو شات و شیر با فوم کم، ۳۶۰ میلی‌ لیتر",
+      "score": 4.9,
+      "off": 0,
+      "type": "cold",
+      "img": "/images/offer-product/01.png"
+    },
+    {
+      "id": "6",
+      "title": "پاستا پنه سبزیجات",
+      "price": 30000,
+      "desc": "ترکیب اسپرسو دو شات و شیر با فوم کم، ۳۶۰ میلی‌ لیتر",
+      "score": 5,
+      "off": 0,
+      "type": "hot",
+      "img": "/images/offer-product/02.png"
+    }
+  ],
   "services": [
     {
       "id": "1",
