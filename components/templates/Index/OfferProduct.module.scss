@@ -1,7 +1,7 @@
 .box_offer {
-    margin-top: 700px;
-    position: relative;
 
+    position: relative;
+    padding-top: 20px;
 
     .title_main {
         color: #FAAA01;
@@ -10,6 +10,7 @@
         justify-content: center;
         display: flex;
         margin-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     &::after {
@@ -45,6 +46,7 @@
 
 
     .swiper_offer {
+
         width: 80%;
         display: flex;
         justify-content: center;
