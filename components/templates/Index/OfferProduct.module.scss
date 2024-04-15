@@ -1,5 +1,54 @@
 .box_offer {
     margin-top: 700px;
+    position: relative;
+
+
+    .title_main {
+        color: #FAAA01;
+        font-size: 20px;
+        font-weight: 300;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &::after {
+        content: "";
+        bottom: 0;
+        left: 0;
+        z-index: -10;
+        background-image: url("./../../../public/images/offer-product/leaf.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+    }
+
+    &::before {
+        content: "";
+        top: 0;
+        right: 50px;
+        z-index: -10;
+        background-image: url("./../../../public/images/offer-product/leaf.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        transform: rotate(90deg);
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
+
+    .swiper_offer {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
 
 
 }

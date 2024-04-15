@@ -7,6 +7,7 @@ import Category from "@/components/templates/Index/Category";
 import MenukafeItem from "@/components/modules/menukafe/MenukafeItem";
 
 import OfferProduct from "@/components/templates/Index/OfferProduct";
+import PopularFood from "@/components/templates/Index/PopularFood";
 
 
 
@@ -21,6 +22,7 @@ function Index({ data }) {
       <Category services={data.services} />
       <MenukafeItem menu={data.menu} />
       <OfferProduct item={data.offer} />
+      <PopularFood item={data.popular} />
 
     </>
   );
@@ -33,6 +35,8 @@ export async function getStaticProps() {
   const menuData = await menuResponse.json();
   const offerResponse = await fetch("http://localhost:4000/offerProduct");
   const offerData = await offerResponse.json();
+  const popularrResponse = await fetch("http://localhost:4000/PopularFood");
+  const popularData = await popularrResponse.json();
 
 
   return {
@@ -41,6 +45,7 @@ export async function getStaticProps() {
         services: servicesData,
         menu: menuData,
         offer: offerData,
+        popular: popularData,
 
       },
     },

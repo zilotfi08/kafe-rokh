@@ -15,32 +15,23 @@ import { Navigation } from 'swiper/modules';
 
 
 
-function Card({ item }) {
+function Card({ img, desc, title, off, price }) {
     return (<>
-        <div className={styled.box_card}>
-            <Swiper
-                slidesPerView={4}
-                navigation={true}
-           
-                modules={[Navigation]}
-                className={styled.swiper_offer}
-            >
+        <div className={styled.box_card_i}>
+            <div className={styled.box}>
+                <div className={styled.box_img}>
+                    <img className={styled.img} src={img} />
+                    <div className={styled.Offer_percent}>%{off}</div>
+                </div>
+                <Link href={`/products`}>
+                    <div className={styled.multiline}>
+                        <h4 className={styled.title}>{title}</h4></div>
+                </Link>
+                <div className={styled.multiline_d}>
+                    <p className={styled.desc} >{desc}</p></div>
+                <span className={styled.price}>{price} <span className={styled.span_1} >تومان</span></span>
+            </div>
 
-                {item.map((item) => (
-                    <SwiperSlide className={styled.swiper_slide} >
-                        <div className={styled.box}>
-                            <img className={styled.img} src={item.img} />
-
-                            <Link href={`/products/${item.id}`}>
-                                <h4 className={styled.title}>{item.title}</h4>
-                            </Link>
-                            <p className={styled.desc} >{item.desc}</p>
-                            <span className={styled.price}>${item.price}</span>
-                        </div>
-                    </SwiperSlide>
-                ))}
-
-            </Swiper>
         </div>
     </>
 

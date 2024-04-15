@@ -1,0 +1,16 @@
+.box_PopularFoods {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .product {
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1000px;
+
+
+    }
+
+}
